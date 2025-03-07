@@ -1,8 +1,8 @@
 module.exports = {
   MESSAGE: {
-    y: "<a:MarkChecking:992381788028669992>", // yes 
-    x: "<:Cross:953158094022668338>", // no
-    i: "<:err:985089618657554472>", // info
-    l: "" // loading
+    y: "<:Check:1347627643209777293>", // yes 
+    x: "<:XMarks:1347627666303353034>", // no
+    i: "<:Info:1347627733080866968>", // info
+    l: "<:Loading:1347627755671388210>" // loading
   }
 }
