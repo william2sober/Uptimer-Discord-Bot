@@ -20,7 +20,7 @@ module.exports = {
 		const embed = new EmbedBuilder()
 		.setTitle('Invite me')
 		.setDescription(`Invite the bot to your server. [Click here](${inviteUrl})`)
-		.setColor('#03fcdb')
+		.setColor('#09b285')
 		.setTimestamp()
 		.setThumbnail(client.user.displayAvatarURL())
 		.setFooter({ text: client.user.tag })
