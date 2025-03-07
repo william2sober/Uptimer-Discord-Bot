@@ -58,7 +58,7 @@ module.exports = {
                 client.Embed()
                   .setAuthor({
                     name: `${client.user.username} Bot Total Projects`,
-                    url: "https://discord.gg/pXRT2FusPb",
+                    url: "https://discord.gg/48BDu759Yc",
                     iconURL: client.user.displayAvatarURL()
                   })
                   .addFields(
@@ -136,23 +136,23 @@ module.exports = {
               let num_btns = [],
                 btn_num1 = new ButtonBuilder()
                   .setStyle(2)
-                  .setEmoji(`1️⃣`)
+                  .setEmoji(`1347628611515060366`)
                   .setCustomId('1'),
                 btn_num2 = new ButtonBuilder()
                   .setStyle(2)
-                  .setEmoji(`2️⃣`)
+                  .setEmoji(`1347628700023390288`)
                   .setCustomId(`2`),
                 btn_num3 = new ButtonBuilder()
                   .setStyle(2)
-                  .setEmoji(`3️⃣`)
+                  .setEmoji(`1347628757707395102`)
                   .setCustomId('3'),
                 btn_num4 = new ButtonBuilder()
                   .setStyle(2)
-                  .setEmoji(`4️⃣`)
+                  .setEmoji(`1347628825248534549`)
                   .setCustomId('4'),
                 btn_num5 = new ButtonBuilder()
                   .setStyle(2)
-                  .setEmoji(`5️⃣`)
+                  .setEmoji(`1347628882374692955`)
                   .setCustomId('5');
 
               let dis1 = new ButtonBuilder()
@@ -163,7 +163,7 @@ module.exports = {
                 back_btn = new ButtonBuilder()
                   .setDisabled(false)
                   .setStyle(1)
-                  .setEmoji(`991359218970001428`)
+                  .setEmoji(`1347629474996555817`)
                   .setCustomId('back'),
                 dis2 = new ButtonBuilder()
                   .setDisabled(true)
@@ -173,7 +173,7 @@ module.exports = {
                 next_btn = new ButtonBuilder()
                   .setDisabled(false)
                   .setStyle(1)
-                  .setEmoji(`991359213819396126`)
+                  .setEmoji(`1347629434609471509`)
                   .setCustomId('next'),
                 dis3 = new ButtonBuilder()
                   .setDisabled(true)
