@@ -1,26 +1,40 @@
 const boxConsole = require('box-console');
-const set = require(`${process.cwd()}/Assets/Config/settings`)
+const set = require(`${process.cwd()}/Assets/Config/settings`);
+const chalk = require('chalk');
+
+const config = {
+  projectName: 'UpTimer Discord Bot',
+  developer: 'William’s Development',
+  supportLink: 'https://discord.gg/48BDu759Yc',
+  coder: 'William2Sober',
+  customColor: '#09b285'
+};
+
 module.exports = {
   async execute(client) {
-    let aio = `Welcome to ${'Server Handler'.bold.blue} by ${'ALL IN ONE | Development'.red}`;
-    let aio_server = `Support:- ${`https://discord.gg/pXRT2FusPb`.brightGreen}`
-    let Uo = `Coded By ${`Uo#1428`.brightCyan.bold}`;
-    console.clear()
-    boxConsole([aio, aio_server, Uo]);
-    // Console Logger
+    const colorText = (text) => chalk.hex(config.customColor)(text);
+
+    // Plain strings for boxConsole (No chalk here to prevent [object Object] issue)
+    let welcomeMessage = `Welcome to ${config.projectName} by ${config.developer}`;
+    let supportMessage = `Support: ${config.supportLink}`;
+    let coderMessage = `Coded By ${config.coder}`;
+
+    console.clear();
+    boxConsole([welcomeMessage, supportMessage, coderMessage]); // Pass plain text strings
+
     client.logger = (data) => {
-      var currentdate = new Date();
-      let logstring = ` ${`${`${currentdate.getDate()}/${currentdate.getMonth() + 1}/${currentdate.getFullYear()}`.brightBlue.bold} ${`│`.brightMagenta.bold}`
-        }`
-      if (typeof data == "string") {
-        console.log(logstring, data.split("\n").map(d => `${d}`.green).join(`\n${logstring} `))
-      } else if (typeof data == "object") {
-        console.log(logstring, JSON.stringify(data, null, 3).green)
-      } else if (typeof data == "boolean") {
-        console.log(logstring, String(data).cyan)
+      let currentdate = new Date();
+      let logPrefix = colorText(`${currentdate.getDate()}/${currentdate.getMonth() + 1}/${currentdate.getFullYear()} │`);
+
+      if (typeof data === "string") {
+        console.log(logPrefix, colorText(data));
+      } else if (typeof data === "object") {
+        console.log(logPrefix, colorText(JSON.stringify(data, null, 3)));
+      } else if (typeof data === "boolean") {
+        console.log(logPrefix, colorText(String(data)));
       } else {
-        console.log(logstring, data)
+        console.log(logPrefix, data);
       }
     };
   }
-}
+};
