@@ -1,10 +1,10 @@
 module.exports = {
-  color: "#43eaf6",
-  successcolor: "#00FF00",
-  stanbycolor: "#FFFFFF",
-  wrongcolor: "#FF0000",
-  footertext: "Powered by Uo",
-  footericon: "https://cdn.discordapp.com/emojis/994612386713575534.gif?size=32&quality=lossless",
-  authoricon: "https://cdn.discordapp.com/emojis/994612386713575534.gif?size=32&quality=lossless",
-  loadingicon: "https://cdn.discordapp.com/emojis/994612386713575534.gif?size=32&quality=lossless"
+  color: "#09b285",
+  successcolor: "#09b285",
+  stanbycolor: "#09b285",
+  wrongcolor: "#09b285",
+  footertext: "Powered by William’s Development",
+  footericon: "https://github.com/william2sober/Image-Hosting/blob/main/William%E2%80%99s%20Development%20Images/Uptimer-Icon.png?raw=true",
+  authoricon: "https://github.com/william2sober/Image-Hosting/blob/main/William%E2%80%99s%20Development%20Images/Uptimer-Icon.png?raw=true",
+  loadingicon: "https://github.com/william2sober/Image-Hosting/blob/main/William%E2%80%99s%20Development%20Images/Uptimer-Icon.png?raw=true"
 }
