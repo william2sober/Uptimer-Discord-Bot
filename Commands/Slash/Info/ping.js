@@ -27,29 +27,29 @@ module.exports = {
       let totalLatency = webLatency + apiLatency;
 
       let emLatency = {
-        Green: "<:Green_Dot:1347724743528415322>",
-        Yellow: "<:Yellow_Dot:1347724793746554961>",
-        Red: "<:Red_Dot:1347724825522606214>"
+        Green: "🟢",
+        Yellow: "🟡",
+        Red: "🔴"
       };
 
       interaction.reply({
         embeds: [
           new EmbedBuilder()
             .setColor(totalLatency < 200 ? client.embed.successcolor : totalLatency < 500 ? client.embed.stanbycolor : client.embed.wrongcolor)
-            .setTitle(`Returns Latency And API Ping`)
+            .setTitle(`📶 Returns Latency And API Ping`)
             .addFields([
               {
-                name: "<:Satellite:1347725416684851291> Websocket Latency",
+                name: "🛰️ Websocket Latency",
                 value: `>>> ${webLatency <= 200 ? emLatency.Green : webLatency <= 400 ? emLatency.Yellow : emLatency.Red} \`${webLatency}ms\``,
                 inline: true
               },
               {
-                name: "<:Space_Station:1347725714224582667> API Latency",
+                name: "🛸 API Latency",
                 value: `>>> ${apiLatency <= 200 ? emLatency.Green : apiLatency <= 400 ? emLatency.Yellow : emLatency.Red} \`${apiLatency}ms\``,
                 inline: true
               },
               {
-                name: "<:Clock:1347726003375570954> Uptime",
+                name: "⏱️ Uptime",
                 value: `>>> \`${days} Days : ${hours} Hrs : ${minutes} Mins : ${seconds} Secs\``,
                 inline: false
               }
