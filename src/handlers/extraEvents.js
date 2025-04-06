@@ -4,23 +4,21 @@ const chalk = require('chalk');
 
 const config = {
   projectName: 'UpTimer Discord Bot',
-  developer: 'William’s Development',
-  supportLink: 'https://discord.gg/48BDu759Yc',
-  coder: 'William2Sober',
+  developer: 'Your Name',
+  supportLink: 'https://discord.gg/invite',
+  coder: 'Your Name',
   customColor: '#09b285'
 };
 
 module.exports = {
   async execute(client) {
     const colorText = (text) => chalk.hex(config.customColor)(text);
-
-    // Plain strings for boxConsole (No chalk here to prevent [object Object] issue)
     let welcomeMessage = `Welcome to ${config.projectName} by ${config.developer}`;
     let supportMessage = `Support: ${config.supportLink}`;
     let coderMessage = `Coded By ${config.coder}`;
 
     console.clear();
-    boxConsole([welcomeMessage, supportMessage, coderMessage]); // Pass plain text strings
+    boxConsole([welcomeMessage, supportMessage, coderMessage]);
 
     client.logger = (data) => {
       let currentdate = new Date();
