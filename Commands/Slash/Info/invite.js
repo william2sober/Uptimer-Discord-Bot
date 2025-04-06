@@ -29,7 +29,7 @@ module.exports = {
 				.addComponents([
 					new ButtonBuilder()
 						.setLabel('Invite')
-						.setEmoji('<:Plus:1347723347949256716>')
+						.setEmoji('➕')
 						.setURL(inviteUrl)
 						.setStyle(ButtonStyle.Link)
 				]);
